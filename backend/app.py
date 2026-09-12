@@ -48,7 +48,7 @@ def predict_sales_revenue():
 
     # Convert predicted_price to Python float
     predicted_sales = round(float(predicted_sales), 2)
-    
+
     # When we send this value directly within a JSON response, Flask's jsonify function encounters a datatype error
 
     # Return the actual price
@@ -59,4 +59,4 @@ def predict_sales_revenue():
 
 # Run the Flask application in debug mode if this script is executed directly
 if __name__ == '__main__':
-    sk_sales_predicator_api.run(debug=True)
+    sk_sales_predicator_api.run(debug=True, port=7860)
